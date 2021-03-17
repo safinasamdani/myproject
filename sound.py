@@ -7,4 +7,4 @@ while 1:
     frequency = frequency + 100
     print(frequency)
     winsound.Beep(frequency, duration)
-    # time.sleep(0.3)
+    time.sleep(0.3)
