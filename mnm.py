@@ -13,7 +13,21 @@ attempts = 0
 
 while attempts < attempt_limit:
     guess_text = input("How many M&Ms are in the jar? ")
+    print("guess_text is ")
+    print(type(guess_text))
+
+    print("Is guess_text a number?")
+    print(guess_text.isnumeric())
+
+    if not guess_text.isnumeric():
+        print("You haven't provided a number. Please provide a number as input,")
+        continue
+
     guess = int(guess_text)
+   
+    print("guess is ")
+    print(type(guess))
+    
     attempts += 1
 
     if mm_count == guess:
